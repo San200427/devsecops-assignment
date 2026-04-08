@@ -47,6 +47,8 @@ jobs:
   dast-zap:
     name: OWASP ZAP DAST Scan
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
